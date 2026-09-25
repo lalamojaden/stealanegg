@@ -1,8 +1,8 @@
 -- ==================================================
--- Cruuzz HUB | TAB | Combat
+-- Jaden HUB | TAB | Combat
 -- ==================================================
 
-local TabsManager = _G.Cruuzz_TabsManager
+local TabsManager = _G.Jaden_TabsManager
 
 local CombatTab, CombatPage = TabsManager:RegisterTab("Combat", 3, "COMBAT")
 
@@ -64,14 +64,14 @@ local function ToggleAutoEquip()
     if AutoEquipCheck.Visible then
         AutoEquipCheckButton.BackgroundColor3 = Color3.fromRGB(105, 90, 190)
         AutoEquipStroke.Color = Color3.fromRGB(135, 120, 225)
-        if _G.Cruuzz_AutoAttack then
-            _G.Cruuzz_AutoAttack.EnableAutoEquip()
+        if _G.Jaden_AutoAttack then
+            _G.Jaden_AutoAttack.EnableAutoEquip()
         end
     else
         AutoEquipCheckButton.BackgroundColor3 = Color3.fromRGB(28, 29, 39)
         AutoEquipStroke.Color = Color3.fromRGB(200, 200, 220)
-        if _G.Cruuzz_AutoAttack then
-            _G.Cruuzz_AutoAttack.DisableAutoEquip()
+        if _G.Jaden_AutoAttack then
+            _G.Jaden_AutoAttack.DisableAutoEquip()
         end
     end
 end
@@ -145,14 +145,14 @@ local function ToggleAutoHit()
     if AutoHitCheck.Visible then
         AutoHitCheckButton.BackgroundColor3 = Color3.fromRGB(105, 90, 190)
         AutoHitStroke.Color = Color3.fromRGB(135, 120, 225)
-        if _G.Cruuzz_AutoAttack then
-            _G.Cruuzz_AutoAttack.EnableAutoHit()
+        if _G.Jaden_AutoAttack then
+            _G.Jaden_AutoAttack.EnableAutoHit()
         end
     else
         AutoHitCheckButton.BackgroundColor3 = Color3.fromRGB(28, 29, 39)
         AutoHitStroke.Color = Color3.fromRGB(200, 200, 220)
-        if _G.Cruuzz_AutoAttack then
-            _G.Cruuzz_AutoAttack.DisableAutoHit()
+        if _G.Jaden_AutoAttack then
+            _G.Jaden_AutoAttack.DisableAutoAttack()
         end
     end
 end
