@@ -1,5 +1,5 @@
 -- ==================================================
--- Cruuzz HUB | FEATURE | VIPTP (AFK Farm Only)
+-- JADEN HUB | FEATURE | VIPTP (AFK Farm Only)
 -- ==================================================
 
 local Players = game:GetService("Players")
@@ -282,7 +282,7 @@ local function CleanupMovers()
     local Hum, Root = GetHumanoid()
     if Root then
         for _, Child in ipairs(Root:GetChildren()) do
-            if Child.Name == "CruuzzBV" or Child.Name == "CruuzzBG" then
+            if Child.Name == "JADENBV" or Child.Name == "JADENBG" then
                 pcall(function() Child:Destroy() end)
             end
         end
